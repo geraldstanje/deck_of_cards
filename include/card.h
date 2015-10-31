@@ -3,8 +3,8 @@
 
 #include <string>
 
-const unsigned int number_of_suits = 4;
-const unsigned int number_of_ranks = 13;
+static const unsigned int number_of_suits = 4;
+static const unsigned int number_of_ranks = 13;
 const unsigned int MAX_NUM_CARDS = number_of_suits * number_of_ranks;
 static const std::string suit_str[4] = {"spade", "club", "diamond", "heart"};
 static const std::string rank_str[13] = {"ace", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "jack", "king", "queen"};
