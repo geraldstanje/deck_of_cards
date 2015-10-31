@@ -36,8 +36,8 @@ typedef enum rank {
 
 class card {
   public:
-    suit suit_;
-    rank rank_;
+    suit_t suit_;
+    rank_t rank_;
     card();
     card(suit s, rank r);
     card& operator=(card &other);
