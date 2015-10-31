@@ -10,13 +10,13 @@ int main() {
     assert(deck.size() == MAX_NUM_CARDS);
 
     card c;
-    deck.deal_card(c);
+    assert(deck.deal_card(c) == true);
 
     assert(c.suit_ == spade && c.rank_ == ace);
 
-    deck.return_card_to_bottom(c);
+    assert(deck.return_card_to_bottom(c) == true);
 
-    deck.deal_card(c);
+    assert(deck.deal_card(c) == true);
 
     assert(c.suit_ == spade && c.rank_ == two);
 
