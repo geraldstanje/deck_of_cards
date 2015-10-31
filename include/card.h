@@ -38,9 +38,10 @@ class card {
   public:
     suit_t suit_;
     rank_t rank_;
-    card();
+    card() = default;
     card(suit s, rank r);
-    card& operator=(card &other);
+    card(const card &obj);
+    card& operator=(card other);
     std::string format_card_str();
 };
 
