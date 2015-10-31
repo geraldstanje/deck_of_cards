@@ -14,7 +14,7 @@ class deck_of_cards {
     void shuffle_cards();
     bool deal_card(card &top);
     bool return_card_to_bottom(const card &bottom);
-    unsigned int size();
+    unsigned int size() const;
     void show();
 };
 

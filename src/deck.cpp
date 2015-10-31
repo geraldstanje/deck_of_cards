@@ -52,7 +52,7 @@ bool deck_of_cards::return_card_to_bottom(const card &bottom) {
     return true;
 }
 
-unsigned int deck_of_cards::size() {
+unsigned int deck_of_cards::size() const {
     return cards.size();
 }
 
