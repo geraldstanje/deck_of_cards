@@ -40,6 +40,7 @@ class card {
     rank rank_;
     card();
     card(suit s, rank r);
+    card& operator=(card &other);
     std::string format_card_str();
 };
 

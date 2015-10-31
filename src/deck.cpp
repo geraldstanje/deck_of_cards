@@ -40,7 +40,7 @@ bool deck_of_cards::deal_card(card &top) {
 
     top = cards.front();
     cards.pop_front();
-    return false;
+    return true;
 }
 
 bool deck_of_cards::return_card_to_bottom(const card &bottom) {
