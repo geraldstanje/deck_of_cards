@@ -11,7 +11,7 @@ deck_of_cards::deck_of_cards() {
 void deck_of_cards::init_cards() {
     for (unsigned int i = 0; i < number_of_suits; i++) {
         for (unsigned int j = 0; j < number_of_ranks; j++) {
-            cards.push_back(card(static_cast<suit>(i), static_cast<rank>(j)));
+            cards.push_back(card(static_cast<suit>(i), static_cast<rank>(j+1)));
         }
     }
 }

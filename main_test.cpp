@@ -12,8 +12,6 @@ int main() {
     card c;
     deck.deal_card(c);
 
-    std::cout << c.rank_ << std::endl;
-
     assert(c.suit_ == spade && c.rank_ == ace);
 
     deck.return_card_to_bottom(c);
